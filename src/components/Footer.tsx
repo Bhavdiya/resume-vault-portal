@@ -14,15 +14,34 @@ const Footer = () => {
                 Let's build something amazing together.
               </p>
               <div className="flex gap-4">
-                <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-primary hover:bg-primary-foreground/10">
-                  <Github className="w-5 h-5" />
-                </Button>
-                <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-primary hover:bg-primary-foreground/10">
-                  <Linkedin className="w-5 h-5" />
-                </Button>
-                <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-primary hover:bg-primary-foreground/10">
-                  <Mail className="w-5 h-5" />
-                </Button>
+                <a
+                  href="https://github.com/riddhimaag"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-primary hover:bg-primary-foreground/10">
+                    <Github className="w-5 h-5" />
+                  </Button>
+                </a>
+                <a
+                  href="https://linkedin.com/in/riddhima-agrawal708"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-primary hover:bg-primary-foreground/10">
+                    <Linkedin className="w-5 h-5" />
+                  </Button>
+                </a>
+                <a
+                  href="mailto:riddhimaagrawal708@gmail.com"
+                  aria-label="Email"
+                >
+                  <Button variant="ghost" size="icon" className="text-primary-foreground hover:text-primary hover:bg-primary-foreground/10">
+                    <Mail className="w-5 h-5" />
+                  </Button>
+                </a>
               </div>
             </div>
 
@@ -59,12 +78,10 @@ const Footer = () => {
 
           {/* Divider */}
           <div className="border-t border-primary-foreground/20 pt-8">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex flex-col items-center justify-center gap-4">
               {/* Copyright */}
               <div className="flex items-center gap-2 text-primary-foreground/80">
                 <span className="text-gray-100">© 2025 RIDDHIMA AGRAWAL</span>
-                <Heart className="w-4 h-4 text-red-400 fill-current" />
-                
               </div>
 
               {/* Tech Stack */}

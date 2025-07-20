@@ -46,15 +46,34 @@ const Hero = () => {
 
           {/* Social Links */}
           <div className="flex justify-center gap-6">
-            <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
-              <Github className="w-6 h-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
-              <Linkedin className="w-6 h-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
-              <Mail className="w-6 h-6" />
-            </Button>
+            <a
+              href="https://github.com/riddhimaag"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
+                <Github className="w-6 h-6" />
+              </Button>
+            </a>
+            <a
+              href="https://linkedin.com/in/riddhima-agrawal708"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
+                <Linkedin className="w-6 h-6" />
+              </Button>
+            </a>
+            <a
+              href="mailto:riddhimaagrawal708@gmail.com"
+              aria-label="Email"
+            >
+              <Button variant="ghost" size="icon" className="hover:text-primary transition-colors">
+                <Mail className="w-6 h-6" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>
