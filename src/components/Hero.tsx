@@ -39,7 +39,7 @@ const Hero = () => {
               <Download className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </Button>
             <Button variant="premium" size="xl" onClick={() => scrollToSection('resume-purchase')} className="group">
-              💼 Buy Resume ($49)
+              Buy Resume ($49)
               <Download className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </Button>
           </div>
