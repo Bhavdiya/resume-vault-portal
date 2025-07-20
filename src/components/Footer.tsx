@@ -15,7 +15,7 @@ const Footer = () => {
               </p>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/riddhimaag"
+                  href="https://github.com/Riddhima11"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
