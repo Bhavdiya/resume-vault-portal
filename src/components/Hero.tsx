@@ -1,14 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
-
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    element?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-subtle relative overflow-hidden">
+  return <section className="min-h-screen flex items-center justify-center bg-gradient-subtle relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-hero opacity-5"></div>
       <div className="absolute top-20 right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
@@ -19,16 +18,12 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
             <div className="w-32 h-32 rounded-full bg-gradient-primary p-1 shadow-glow">
-              <div className="w-full h-full rounded-full bg-gradient-subtle flex items-center justify-center text-4xl font-bold text-primary">
-                JS
-              </div>
+              <div className="w-full h-full rounded-full bg-gradient-subtle flex items-center justify-center text-4xl font-bold text-primary">RA</div>
             </div>
           </div>
 
           {/* Hero Text */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent leading-tight">
-            John Smith
-          </h1>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent leading-tight">RIDDHIMA AGRAWAL</h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-medium">
             Full-Stack Developer
           </p>
@@ -39,21 +34,11 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Button 
-              variant="hero" 
-              size="xl" 
-              onClick={() => scrollToSection('projects')}
-              className="group"
-            >
+            <Button variant="hero" size="xl" onClick={() => scrollToSection('projects')} className="group">
               View My Work
               <Download className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </Button>
-            <Button 
-              variant="premium" 
-              size="xl" 
-              onClick={() => scrollToSection('resume-purchase')}
-              className="group"
-            >
+            <Button variant="premium" size="xl" onClick={() => scrollToSection('resume-purchase')} className="group">
               💼 Buy Resume ($49)
               <Download className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </Button>
@@ -73,8 +58,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
